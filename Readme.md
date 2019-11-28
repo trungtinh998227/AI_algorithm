@@ -1,0 +1,3 @@
+AI_Algorithm
+1. Naive_bayes_clasification
+2. KNN chatbot_TDT_answering_question
