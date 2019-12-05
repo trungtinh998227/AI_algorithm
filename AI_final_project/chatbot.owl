@@ -13,6 +13,35 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Dạy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Dạy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Giảng_viên"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Khoa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Học -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Học">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Sinh_viên"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Khoa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Data properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -21,19 +50,48 @@
     
 
 
-    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Câu_hỏi -->
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Faculty_Name -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Câu_hỏi">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Faculty_Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Khoa"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Đáp_án -->
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#GV_Id -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Đáp_án">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#GV_Id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Con_người"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Location">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Cơ_Sở"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Khoa"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Con_người"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#SV_Id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#SV_Id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Sinh_viên"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
@@ -49,26 +107,78 @@
     
 
 
-    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Cơ_sở -->
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Algorithm_1 -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Cơ_sở">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Trường_Đại_học_Tôn_Đức_Thắng"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Algorithm_1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Môn_học"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Cơ_sở_vật_chất -->
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#CLC_100_tiếng_anh -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Cơ_sở_vật_chất">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Trường_Đại_học_Tôn_Đức_Thắng"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#CLC_100_tiếng_anh">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Hệ"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Giải_thưởng -->
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#CLC_50_tiếng_anh -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Giải_thưởng">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Trường_Đại_học_Tôn_Đức_Thắng"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#CLC_50_tiếng_anh">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Hệ"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Computer_vison -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Computer_vison">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Môn_học"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Con_người -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Con_người">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Khoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Cơ_Sở -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Cơ_Sở">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Hình_thức_xét_tuyển"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Giảng_viên -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Giảng_viên">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Con_người"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Hình_thức_xét_tuyển -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Hình_thức_xét_tuyển"/>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Hệ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Hệ"/>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Học_bạ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Học_bạ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Hình_thức_xét_tuyển"/>
     </owl:Class>
     
 
@@ -76,22 +186,240 @@
     <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Khoa -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Khoa">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Trường_Đại_học_Tôn_Đức_Thắng"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Môn_học"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Phòng_ban -->
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Môn_học -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Phòng_ban">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Trường_Đại_học_Tôn_Đức_Thắng"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Môn_học"/>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Sinh_viên -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Sinh_viên">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Con_người"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Trường_Đại_học_Tôn_Đức_Thắng -->
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Thi_THPT_quốc_gia -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Trường_Đại_học_Tôn_Đức_Thắng"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Thi_THPT_quốc_gia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Hình_thức_xét_tuyển"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Tiêu_chuẩn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Tiêu_chuẩn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Hệ"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Tuyển_thẳng -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Tuyển_thẳng">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Hình_thức_xét_tuyển"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#A1_001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#A1_001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Algorithm_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#A1_002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#A1_002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Algorithm_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Bình_Thạnh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Bình_Thạnh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Cơ_Sở"/>
+        <Location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">98 Ngô Tất Tố: Phường 19, Quận Bình Thạnh, Tp. Hồ Chí Minh</Location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Bảo_Lộc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Bảo_Lộc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Cơ_Sở"/>
+        <Location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Đường Nguyễn Tuân, P. Lộc Tiến, TP.Bảo Lộc, Tỉnh Lâm Đồng</Location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#CNTT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#CNTT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Khoa"/>
+        <Faculty_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Công nghệ thông tin</Faculty_Name>
+        <Location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C004</Location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#CV_001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#CV_001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Computer_vison"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#CV_002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#CV_002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Computer_vison"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Cà_Mau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Cà_Mau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Cơ_Sở"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Gv1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Gv1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Giảng_viên"/>
+        <Dạy rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#A1_001"/>
+        <Dạy rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#A1_002"/>
+        <GV_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</GV_Id>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tran Thanh Phuoc</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Gv2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Gv2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Giảng_viên"/>
+        <Dạy rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#CV_001"/>
+        <Dạy rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#CV_002"/>
+        <GV_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">002</GV_Id>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le Anh Cuong</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Hồ_Chí_Minh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Hồ_Chí_Minh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Cơ_Sở"/>
+        <Location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Số 19 Nguyễn Hữu Thọ, P. Tân Phong, Q.7, Tp. Hồ Chí Minh</Location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#KTCT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#KTCT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Khoa"/>
+        <Faculty_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C009</Faculty_Name>
+        <Faculty_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kỹ thuật công trình</Faculty_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#MTCN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#MTCN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Khoa"/>
+        <Faculty_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mỹ thuật công nghiệp</Faculty_Name>
+        <Location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D703</Location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Nha_Trang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Nha_Trang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Cơ_Sở"/>
+        <Location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Số 22 Nguyễn Đình Chiểu, P. Vĩnh Phước, Tp. Nha Trang, Khánh Hòa</Location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Sv1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Sv1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Sinh_viên"/>
+        <Học rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#A1_001"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nguyen Trung Tinh</Name>
+        <SV_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">51603330</SV_Id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Sv2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Sv2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Sinh_viên"/>
+        <Học rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#CV_001"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nguyen Tuan Huy</Name>
+        <SV_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">51603144</SV_Id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Sv3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Sv3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Sinh_viên"/>
+        <Học rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#A1_001"/>
+        <Học rdf:resource="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#CV_002"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ho Ngoc Kinh</Name>
+        <SV_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">51603174</SV_Id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Cơ_Sở"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Hệ"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/trung/ontologies/2019/10/untitled-ontology-4#Khoa"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
